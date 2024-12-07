@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Template_method
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            AbstractClass aA = new ConcreteClassA();
+            aA.TemplateMethod();
+
+            AbstractClass aB = new ConcreteClassB();
+            aB.TemplateMethod();
+        }
+    }
+}
